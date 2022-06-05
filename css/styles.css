@@ -106,12 +106,10 @@ body {
 }
 .header-link:hover,
 .header-link:focus,
-.header-email:hover,
-.header-email:focus,
-.header-tel:hover,
-.header-tel:focus,
-.header-contacts-item:hover,
-.header-contacts-item:focus {
+.header-email.link:hover,
+.header-email.link:focus,
+.header-tel.link:hover,
+.header-tel.link:focus {
 	color: var(--accent-color);
 	fill: var(--accent-color);
 }
@@ -124,10 +122,17 @@ body {
 	display: flex;
 	margin-left: auto;
 }
-
-.header-contacts-item {
+.header-email.link,
+.header-tel.link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	fill: #afb1b8;
 }
 
+.header-icon {
+	margin-right: 10px;
+}
 .header-email {
 	display: inline-block;
 	padding-top: 32px;
@@ -139,12 +144,6 @@ body {
 	letter-spacing: 0.02em;
 	color: var(--add-color);
 }
-
-.icon-envelope,
-.icon-smartphone {
-	margin-right: 10px;
-}
-
 .header-tel {
 	display: inline-block;
 	padding-top: 32px;
@@ -161,9 +160,8 @@ body {
 	background-color: #2f303a;
 	text-align: center;
 	background-image: linear-gradient(
-			0deg,
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.2)
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
 		),
 		url(../images/Img-5.jpg);
 	background-repeat: no-repeat;
@@ -220,20 +218,62 @@ body {
 	margin-right: 30px;
 } */
 
-.features-item::before {
+.features-item.antenna::before {
+	margin-bottom: 30px;
+	display: block;
 	content: "";
 	width: 270px;
 	height: 120px;
 	border-radius: 4px;
 	background-color: var(--add-bckgrnd-clr);
-	background-image: url(../img/logo.svg);
-	background-size: contain;
+	background-image: url(../images/antenna.svg);
+	margin-right: 0;
+	/* background-size: contain; */
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 50px;
-	height: 50px;
 }
-
+.features-item.clock::before {
+	margin-bottom: 30px;
+	display: block;
+	content: "";
+	width: 270px;
+	height: 120px;
+	border-radius: 4px;
+	background-color: var(--add-bckgrnd-clr);
+	background-image: url(../images/clock.svg);
+	margin-right: 0;
+	/* background-size: contain; */
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.features-item.diagram::before {
+	margin-bottom: 30px;
+	display: block;
+	content: "";
+	width: 270px;
+	height: 120px;
+	border-radius: 4px;
+	background-color: var(--add-bckgrnd-clr);
+	background-image: url(../images/diagram.svg);
+	margin-right: 0;
+	/* background-size: contain; */
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.features-item.astronaut::before {
+	margin-bottom: 30px;
+	display: block;
+	content: "";
+	width: 270px;
+	height: 120px;
+	border-radius: 4px;
+	background-color: var(--add-bckgrnd-clr);
+	background-image: url(../images/astronaut.svg);
+	margin-right: 0;
+	/* background-size: contain; */
+	background-repeat: no-repeat;
+	background-position: center;
+}
 .features-item .features-title {
 	margin-bottom: 10px;
 	font-weight: 700;
