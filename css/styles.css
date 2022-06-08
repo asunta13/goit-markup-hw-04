@@ -225,6 +225,11 @@ body {
 	margin-right: 30px;
 } */
 
+/* .features-item.antenna {
+	width: 70px;
+	height: 70px;
+} */
+
 .features-item.antenna::before {
 	margin-bottom: 30px;
 	display: block;
@@ -233,9 +238,7 @@ body {
 	height: 120px;
 	border-radius: 4px;
 	background-color: var(--add-bckgrnd-clr);
-	background-image: url(../images/symbol-defs.svg#icon-antenna);
-	margin-right: 0;
-	/* background-size: contain; */
+	background-image: url(../images/antenna.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -247,9 +250,7 @@ body {
 	height: 120px;
 	border-radius: 4px;
 	background-color: var(--add-bckgrnd-clr);
-	background-image: url(../images/symbol-defs.svg#icon-clock);
-	margin-right: 0;
-	/* background-size: contain; */
+	background-image: url(../images/clock.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -261,9 +262,7 @@ body {
 	height: 120px;
 	border-radius: 4px;
 	background-color: var(--add-bckgrnd-clr);
-	background-image: url(../images/symbol-defs.svg#icon-diagram);
-	margin-right: 0;
-	/* background-size: contain; */
+	background-image: url(../images/diagram.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -275,9 +274,7 @@ body {
 	height: 120px;
 	border-radius: 4px;
 	background-color: var(--add-bckgrnd-clr);
-	background-image: url(../images/symbol-defs.svg#icon-astronaut);
-	margin-right: 0;
-	/* background-size: contain; */
+	background-image: url(../images/astronaut.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
