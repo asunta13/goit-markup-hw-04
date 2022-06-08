@@ -122,6 +122,7 @@ body {
 	display: flex;
 	margin-left: auto;
 }
+
 .header-email.link,
 .header-tel.link {
 	display: flex;
@@ -130,14 +131,18 @@ body {
 	fill: #afb1b8;
 }
 
+.header-contacts-item:not(:last-child) {
+	margin-right: 50px;
+}
 .header-icon {
 	margin-right: 10px;
 }
+
 .header-email {
 	display: inline-block;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	margin-right: 50px;
+	/* margin-right: 50px; */
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -228,7 +233,7 @@ body {
 	height: 120px;
 	border-radius: 4px;
 	background-color: var(--add-bckgrnd-clr);
-	background-image: url(../images/antenna.svg);
+	background-image: url(../images/symbol-defs.svg#icon-antenna);
 	margin-right: 0;
 	/* background-size: contain; */
 	background-repeat: no-repeat;
@@ -242,7 +247,7 @@ body {
 	height: 120px;
 	border-radius: 4px;
 	background-color: var(--add-bckgrnd-clr);
-	background-image: url(../images/clock.svg);
+	background-image: url(../images/symbol-defs.svg#icon-clock);
 	margin-right: 0;
 	/* background-size: contain; */
 	background-repeat: no-repeat;
@@ -256,7 +261,7 @@ body {
 	height: 120px;
 	border-radius: 4px;
 	background-color: var(--add-bckgrnd-clr);
-	background-image: url(../images/diagram.svg);
+	background-image: url(../images/symbol-defs.svg#icon-diagram);
 	margin-right: 0;
 	/* background-size: contain; */
 	background-repeat: no-repeat;
@@ -270,7 +275,7 @@ body {
 	height: 120px;
 	border-radius: 4px;
 	background-color: var(--add-bckgrnd-clr);
-	background-image: url(../images/astronaut.svg);
+	background-image: url(../images/symbol-defs.svg#icon-astronaut);
 	margin-right: 0;
 	/* background-size: contain; */
 	background-repeat: no-repeat;
@@ -344,7 +349,7 @@ body {
 
 .team-details {
 	padding-top: 30px;
-	margin-bottom: 16px;
+	padding-bottom: 30px;
 }
 .team-name {
 	margin-bottom: 10px;
@@ -356,6 +361,7 @@ body {
 }
 
 .team-position {
+	margin-bottom: 16px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.19;
@@ -368,7 +374,6 @@ body {
 	justify-content: center;
 	padding-left: 32px;
 	padding-right: 32px;
-	padding-bottom: 30px;
 }
 
 .team-soc-item {
@@ -404,7 +409,6 @@ body {
 
 .clients-item {
 	width: 170px;
-	height: 92px;
 	margin-right: 30px;
 }
 
@@ -426,7 +430,7 @@ body {
 }
 .clients-link:hover,
 .clients-link:focus {
-	border: 1px solid var(--accent-color);
+	border-color: var(--accent-color);
 	fill: var(--accent-color);
 }
 
@@ -582,8 +586,8 @@ body {
 	border-bottom: 1px solid #eeeeee;
 }
 
-.examples-item-link:hover,
-.examples-item-link:focus {
+.examples-item:hover,
+.examples-item:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
